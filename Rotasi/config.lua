@@ -24,6 +24,21 @@ RandomEmot = {
     "dance"
 }
 
+function Waktu(idk)
+    curTime = os.time()
+    return os.date("!%"..idk, curTime)
+end
+
+function JamIni()
+    virz = os.date("*t", Dovi)
+    return virz.hour
+end
+
+function MenitIni()
+    virz = os.date("*t", Dovi)
+    return virz.min
+end
+
 function Method()
     say(RandomChat[math.random(1, #RandomChat)])
     sleep(500)
