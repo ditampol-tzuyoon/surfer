@@ -194,8 +194,6 @@ end
 
 function odnotice(logger)
 
-    if not HideWebhook or ShowPingHook then
-
         ohdpir = os.time{year=Waktu("Y"), month=Waktu("m"), day=Waktu("d"), hour=Waktu("H"), min=Waktu("M"), sec=Waktu("S")}
         Dovi = ohdpir + (UTC_Time * 3600)
         TimezNow = os.date("%c", Dovi)
@@ -255,7 +253,7 @@ function odnotice(logger)
         local pipe = io.popen("powershell -command -", "w")
         pipe:write(script)
         pipe:close()
-    end
+  
 end
 
 math.randomseed(os.time())
