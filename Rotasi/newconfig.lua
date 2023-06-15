@@ -256,13 +256,13 @@ function ohdsay(logger, hookURL, Pings)
                             "inline": "true"
                         },
                         {
-                            "name": "]]..emot_gems..[[ All Gems and Timers",
-                            "value": "]]..AllGems..[[ Gems\n]]..BotRun..[[",
+                            "name": "]]..emot_world..[[ World Info",
+                            "value": "]]..ShowWorld..[[",
                             "inline": "true"
                         },
                         {
-                            "name": "]]..emot_world..[[ World Info",
-                            "value": "]]..ShowWorld..[[",
+                            "name": "]]..emot_gems..[[ All Gems and Timers",
+                            "value": "]]..AllGems..[[ Gems\n]]..BotRun..[[",
                             "inline": "true"
                         }
                     ]
