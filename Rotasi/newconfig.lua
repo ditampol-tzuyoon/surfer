@@ -58,6 +58,10 @@ function ohdmod(logger)
             "embeds": [{
                 "description": "]].. logger .." "..InfoBy..[[",
                 "color": "]] .. math.random(0, 16777215) .. [[",
+
+                "image": {
+                    "url": "]].. Odirrrr ..[["
+                },
  
                 "footer": {
                     "text": "Script by Ohdear_ \n]]..TimezNow..[["
@@ -73,7 +77,66 @@ function ohdmod(logger)
     end
 end
 
+function ohdtag(logger)
+
+    ohdpir = os.time{year=Waktu("Y"), month=Waktu("m"), day=Waktu("d"), hour=Waktu("H"), min=Waktu("M"), sec=Waktu("S")}
+    Dovi = ohdpir + (UTC_Time * 3600)
+    TimezNow = os.date("%c", Dovi)
+
+    if OdBot().status == "online" then
+        statzBot = ":green_circle:"
+        Warna = 7405312
+        Ment = ""
+    else
+        Ment = "<@"..userdc..">"
+        statzBot = ":red_circle:"
+        Warna = 16711680
+    end
+
+    odvr = CekOff(MainHook)
+
+    GetDC = {}
+
+    for vd in string.gmatch(odvr, "[%d]+") do
+        table.insert(GetDC, vd)
+    end
+
+    MyTeks = "\\n~\\nDETAIL : https://discord.com/channels/"..GetDC[1].."/"..GetDC[2].."/"..HookID
+
+    local RequestINFO = {}
+    RequestINFO.url = PingHook
+    RequestINFO.json = true
+    RequestINFO.method=POST
+    RequestINFO.postData = [[
+        {
+            "username": "]]..OdBot().name..[[",
+            "content": "]]..Ment..[[",
+            
+            "embeds": [{
+                "description": "]].. logger ..[[ ]]..MyTeks..[[",
+                "color": "]] .. Warna .. [[",
+
+                "image": {
+                    "url": "]].. Odirrrr ..[["
+                },
+
+                "footer": {
+                    "text": "Script by Ohdear_ \n]]..TimezNow..[["
+                }
+            }]
+        }
+    ]]
+    local x = httpReq(RequestINFO)
+    if x.success then
+        log("Response HTTP Status Code : ", x.httpCode)
+    else
+        log("Request Failed Error Msg : ", x.failInfo)
+    end
+end
+
 function odnotice(logger)
+
+    Ment = "<@"..userdc..">"
 
     ohdpir = os.time{year=Waktu("Y"), month=Waktu("m"), day=Waktu("d"), hour=Waktu("H"), min=Waktu("M"), sec=Waktu("S")}
     Dovi = ohdpir + (UTC_Time * 3600)
@@ -93,9 +156,16 @@ function odnotice(logger)
     RequestINFO.method=POST
     RequestINFO.postData = [[
         {
+            "username": "]]..OdBot().name..[[",
+            "content": "]]..Ment..[[",
+
             "embeds": [{
                 "description": "]].. logger ..[[",
                 "color": "]] .. Warna .. [[",
+                
+                "image": {
+                    "url": "]].. Odirrrr ..[["
+                },
 
                 "footer": {
                     "text": "Script by Ohdear_ \n]]..TimezNow..[["
@@ -117,9 +187,9 @@ function ohdsay(logger, hookURL, Pings)
     Judulz = "Rotasi Farm Surfer ("..versi..") || "..#ListPembeli.." Users. || Author Ohdear_"
 
     if Pings then
-        ingfo = "<@"..userdc..">"
+        Ment = "<@"..userdc..">"
     else
-        ingfo = ""
+        Ment = ""
     end
 
     if Istirahat then
@@ -198,6 +268,9 @@ function ohdsay(logger, hookURL, Pings)
         RequestINFO.method=PATCH
         RequestINFO.postData = [[
             {
+                "username": "]]..OdBot().name..[[",
+                "content": "]]..Ment..[[",
+
                 "embeds": [{
                     "description": "]].. logger ..[[",
                     "color": "]] .. Warna .. [[",
@@ -285,6 +358,9 @@ function ohdsay(logger, hookURL, Pings)
         RequestINFO.method=PATCH
         RequestINFO.postData = [[
             {
+                "username": "]]..OdBot().name..[[",
+                "content": "]]..Ment..[[",
+
                 "embeds": [{
                     "description": "]].. logger ..[[",
                     "color": "]] .. Warna .. [[",
@@ -338,6 +414,9 @@ function ohdsay(logger, hookURL, Pings)
         RequestINFO.method=PATCH
         RequestINFO.postData = [[
             {
+                "username": "]]..OdBot().name..[[",
+                "content": "]]..Ment..[[",
+                
                 "embeds": [{
                     "description": "]].. logger ..[[",
                     "color": "]] .. Warna .. [[",
