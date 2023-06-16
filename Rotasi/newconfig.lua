@@ -28,6 +28,8 @@ function SemuaGems()
     return odv
 end
 
+Odirrrr = "https://raw.githubusercontent.com/ditampol-tzuyoon/surfer/main/Image%20Animasi.gif"
+
 LogoPartai = {
     "https://raw.githubusercontent.com/ditampol-tzuyoon/jnck/main/partai/demokrat.png",
     "https://raw.githubusercontent.com/ditampol-tzuyoon/jnck/main/partai/gerindra.png",
@@ -209,6 +211,10 @@ function ohdsay(logger, hookURL, Pings)
                         "url": "]].. Thumbs ..[["
                     },
 
+                    "image": {
+                        "url": "]].. Odirrrr ..[["
+                    },
+
                     "author": {
                         "name": "]]..Judulz..[[",
                         "url": "https://discord.gg/TjVwdgma74",
@@ -292,6 +298,10 @@ function ohdsay(logger, hookURL, Pings)
                         "url": "]].. Thumbs ..[["
                     },
 
+                    "image": {
+                        "url": "]].. Odirrrr ..[["
+                    },
+
                     "author": {
                         "name": "]]..Judulz..[[",
                         "url": "https://discord.gg/TjVwdgma74",
@@ -339,6 +349,10 @@ function ohdsay(logger, hookURL, Pings)
 
                     "thumbnail": {
                         "url": "]].. Thumbs ..[["
+                    },
+
+                    "image": {
+                        "url": "]].. Odirrrr ..[["
                     },
 
                     "author": {
