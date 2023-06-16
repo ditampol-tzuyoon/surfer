@@ -101,7 +101,7 @@ function ohdtag(logger)
         table.insert(GetDC, vd)
     end
 
-    MyTeks = "\\n~\\nDETAIL : https://discord.com/channels/"..GetDC[1].."/"..GetDC[2].."/"..HookID
+    MyTeks = "\\n~\\nDETAIL : https://discord.com/channels/"..GetDC[2].."/"..GetDC[1].."/"..HookID
 
     local RequestINFO = {}
     RequestINFO.url = PingHook
