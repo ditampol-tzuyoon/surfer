@@ -41,5 +41,14 @@ ListPembeli = {
     {iddc = "0", nick = "pgrnin", aktif = 1687071900},
     {iddc = "0", nick = "dokangdf2", aktif = 1687071900},
     {iddc = "0", nick = "sendjl91", aktif = 1687071900},
-    {iddc = "963679436786528296", nick = "374MalesBgt", aktif = 1687617319}
+    {iddc = "963679436786528296", nick = "374MalesBgt", aktif = 0},
+    {iddc = "0", nick = "sinoke", aktif = 1687071900},
+    {iddc = "0", nick = "GoFix", aktif = 1687071900},
+    {iddc = "0", nick = "kutien107", aktif = 1687071900},
+    {iddc = "0", nick = "AlanRommel", aktif = 1687071900},
+    {iddc = "0", nick = "Haerades", aktif = 1687071900},
+    {iddc = "0", nick = "hrklgg", aktif = 1687071900},
+    {iddc = "0", nick = "ShelCom", aktif = 1687071900},
+    {iddc = "0", nick = "fathisukacindo", aktif = 1687071900},
+    {iddc = "0", nick = "M8Q5Y8Q3S3", aktif = 1687071900}
 }
