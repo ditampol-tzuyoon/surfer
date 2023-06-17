@@ -410,14 +410,14 @@ function ohdsay(logger, hookURL, Pings)
                             "inline": "true"
                         },
                         {
-                            "name": ":timer: Bot Active",
-                            "value": "]]..BotRun..[[",
-                            "inline": "true"
-                        },
-                        
-                        {
                             "name": "]]..emot_tas..[[ Backpack (Sisa Seed)",
                             "value": "]]..findItem(seed)..[[ ]]..GetNameID(seed)..[[",
+                            "inline": "true"
+                        },
+
+                        {
+                            "name": ":timer: Bot Active",
+                            "value": "]]..BotRun..[[",
                             "inline": "true"
                         }
                     ]
