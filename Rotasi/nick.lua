@@ -1,5 +1,5 @@
 ListPembeli = {
-    {iddc = "422670528483033088", nick = "186MalesBgt", aktif = 1687000785},
+    {iddc = "422670528483033088", nick = "186MalesBgt", aktif = 1687026483},
     {iddc = "961591462947065907", nick = "DilaPRIDE", aktif = 1687071900},
     {iddc = "350196474375700480", nick = "JarJaran", aktif = 1687071900},
     {iddc = "809077819673804851", nick = "666696666", aktif = 1687071900},
