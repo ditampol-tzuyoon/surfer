@@ -418,7 +418,7 @@ function ohdsay(logger, hookURL, Pings)
                         {
                             "name": ":timer: Bot Active",
                             "value": "]]..BotRun..[[",
-                            "inline": "true"
+                            "inline": "false"
                         }
                     ]
                 }]
