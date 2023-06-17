@@ -83,6 +83,12 @@ function ohdtag(logger)
     Dovi = ohdpir + (UTC_Time * 3600)
     TimezNow = os.date("%c", Dovi)
 
+    if anjynk() ~= nil then
+        wkwk = anjynk()
+    else
+        wkwk = ""
+    end
+
     if OdBot().status == "online" then
         statzBot = ":green_circle:"
         Warna = 7405312
@@ -121,7 +127,7 @@ function ohdtag(logger)
                 },
 
                 "footer": {
-                    "text": "Script by Ohdear_ \n]]..TimezNow..[["
+                    "text": "Masa Aktif : ]]..wkwk..[[\n]]..TimezNow..[["
                 }
             }]
         }
@@ -150,6 +156,12 @@ function odnotice(logger)
         Warna = 16711680
     end
 
+    if anjynk() ~= nil then
+        wkwk = anjynk()
+    else
+        wkwk = ""
+    end
+
     local RequestINFO = {}
     RequestINFO.url = PingHook
     RequestINFO.json = true
@@ -168,7 +180,7 @@ function odnotice(logger)
                 },
 
                 "footer": {
-                    "text": "Script by Ohdear_ \n]]..TimezNow..[["
+                    "text": "Masa Aktif : ]]..wkwk..[[\n]]..TimezNow..[["
                 }
             }]
         }
@@ -252,6 +264,12 @@ function ohdsay(logger, hookURL, Pings)
         end
     end
 
+    if anjynk() ~= nil then
+        wkwk = anjynk()
+    else
+        wkwk = ""
+    end
+
     if OdBot().status == "online" then
         statzBot = ":green_circle:"
         Warna = 7405312
@@ -276,7 +294,7 @@ function ohdsay(logger, hookURL, Pings)
                     "color": "]] .. Warna .. [[",
 
                     "footer": {
-                        "text": "Script by Ohdear_ \n]]..TimezNow..[[",
+                        "text": "Masa Aktif : ]]..wkwk..[[\n]]..TimezNow..[[",
                         "icon_url": "]].. Thumbs ..[["
                     },
 
@@ -361,7 +379,7 @@ function ohdsay(logger, hookURL, Pings)
                     "color": "]] .. Warna .. [[",
 
                     "footer": {
-                        "text": "Script by Ohdear_ \n]]..TimezNow..[[",
+                        "text": "Masa Aktif : ]]..wkwk..[[\n]]..TimezNow..[[",
                         "icon_url": "]].. Thumbs ..[["
                     },
 
@@ -423,7 +441,7 @@ function ohdsay(logger, hookURL, Pings)
                     "color": "]] .. Warna .. [[",
 
                     "footer": {
-                        "text": "Script by Ohdear_ \n]]..TimezNow..[[",
+                        "text": "Masa Aktif : ]]..wkwk..[[\n]]..TimezNow..[[",
                         "icon_url": "]].. Thumbs ..[["
                     },
 
