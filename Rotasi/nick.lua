@@ -64,5 +64,8 @@ ListPembeli = {
     {iddc = "0", nick = "ayahjoni1", aktif = 1687071900},
     {iddc = "0", nick = "AnakPande", aktif = 1687071900},
     {iddc = "0", nick = "lemaknianwoi", aktif = 1687071900},
-    {iddc = "0", nick = "Harubanana", aktif = 1687071900}
+    {iddc = "0", nick = "Harubanana", aktif = 1687071900},
+    {iddc = "0", nick = "IkanRGB", aktif = 1687071900},
+    {iddc = "0", nick = "jakuCV", aktif = 1687071900},
+    {iddc = "0", nick = "Siloasol95", aktif = 1687071900}
 }
