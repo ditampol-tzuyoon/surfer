@@ -41,9 +41,9 @@ LogoPartai = {
 
 function ohdmod(logger)
 
-    ohdpir = os.time{year=Waktu("Y"), month=Waktu("m"), day=Waktu("d"), hour=Waktu("H"), min=Waktu("M"), sec=Waktu("S")}
-    Dovi = ohdpir + (7 * 3600)
-    TimezNow = os.date("%c", Dovi)
+    local ohdpir = os.time{year=Waktu("Y"), month=Waktu("m"), day=Waktu("d"), hour=Waktu("H"), min=Waktu("M"), sec=Waktu("S")}
+    local Dovi = ohdpir + (7 * 3600)
+    local TimezNow = os.date("%c", Dovi)
 
     InfoBy = "\\nInfo By <@"..userdc..">"
     TagRole = "<@&1057182557185257522>"
@@ -79,9 +79,9 @@ end
 
 function ohdtag(logger)
 
-    ohdpir = os.time{year=Waktu("Y"), month=Waktu("m"), day=Waktu("d"), hour=Waktu("H"), min=Waktu("M"), sec=Waktu("S")}
-    Dovi = ohdpir + (UTC_Time * 3600)
-    TimezNow = os.date("%c", Dovi)
+    local ohdpir = os.time{year=Waktu("Y"), month=Waktu("m"), day=Waktu("d"), hour=Waktu("H"), min=Waktu("M"), sec=Waktu("S")}
+    local Dovi = ohdpir + (UTC_Time * 3600)
+    local TimezNow = os.date("%c", Dovi)
 
     if anjynk() ~= nil then
         wkwk = anjynk()
@@ -144,9 +144,9 @@ function odnotice(logger)
 
     Ment = "<@"..userdc..">"
 
-    ohdpir = os.time{year=Waktu("Y"), month=Waktu("m"), day=Waktu("d"), hour=Waktu("H"), min=Waktu("M"), sec=Waktu("S")}
-    Dovi = ohdpir + (UTC_Time * 3600)
-    TimezNow = os.date("%c", Dovi)
+    local ohdpir = os.time{year=Waktu("Y"), month=Waktu("m"), day=Waktu("d"), hour=Waktu("H"), min=Waktu("M"), sec=Waktu("S")}
+    local Dovi = ohdpir + (UTC_Time * 3600)
+    local TimezNow = os.date("%c", Dovi)
 
     if OdBot().status == "online" then
         statzBot = ":green_circle:"
@@ -228,9 +228,9 @@ function ohdsay(logger, hookURL, Pings)
     ..delaypnb.." / "..delayplace.." / "..delayht.." / "
     ..delayplant.." / "..delayworld..")**"
 
-    ohdpir = os.time{year=Waktu("Y"), month=Waktu("m"), day=Waktu("d"), hour=Waktu("H"), min=Waktu("M"), sec=Waktu("S")}
-    Dovi = ohdpir + (UTC_Time * 3600)
-    TimezNow = os.date("%c", Dovi)
+    local ohdpir = os.time{year=Waktu("Y"), month=Waktu("m"), day=Waktu("d"), hour=Waktu("H"), min=Waktu("M"), sec=Waktu("S")}
+    local Dovi = ohdpir + (UTC_Time * 3600)
+    local TimezNow = os.date("%c", Dovi)
 
     if findClothes(98) then
         PickBotz = ":green_circle: **Pickaxe** (x"..findItem(98)..")"
