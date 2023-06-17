@@ -27,6 +27,7 @@ ListPembeli = {
     {iddc = "0", nick = "Nikimawn123", aktif = 1687071900},
     {iddc = "0", nick = "txfdmsqk", aktif = 1687071900},
     {iddc = "0", nick = "iRiyuuun", aktif = 1687071900},
+    {iddc = "0", nick = "Gyrkgog17", aktif = 1687071900},
     {iddc = "0", nick = "putrarian20", aktif = 1687071900},
     {iddc = "0", nick = "gtsbot", aktif = 1687071900}
 }
