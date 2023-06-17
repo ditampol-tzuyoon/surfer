@@ -297,7 +297,7 @@ function ohdsay(logger, hookURL, Pings)
                     "fields": [
                         {
                             "name": "]]..emot_bot..[[ Bot Name",
-                            "value": "]]..OdBot().name..[[ **(]]..getPing()..[[ Ms)**",
+                            "value": "]]..OdBot().name..[[ **(Lv ]]..OdBot().level..[[)**",
                             "inline": "false"
                         },
 
@@ -315,7 +315,7 @@ function ohdsay(logger, hookURL, Pings)
 
                         {
                             "name": "]]..statzBot..[[ Bot Status",
-                            "value": "**]]..(OdBot().status):upper()..[[**",
+                            "value": "]]..(OdBot().status):upper()..[[ **(]]..getPing()..[[ Ms)**",
                             "inline": "true"
                         },
                         {
@@ -325,7 +325,7 @@ function ohdsay(logger, hookURL, Pings)
                         },
                         {
                             "name": "]]..emot_gems..[[ Gems in Backpack",
-                            "value": "]]..findItem(112)..[[/]]..hargapack..[[",
+                            "value": "]]..findItem(112)..[[/]]..hargapack..[[\n]]..AllGems..[[ Gems\n]]..BotRun..[[",
                             "inline": "true"
                         },
                         
@@ -337,11 +337,6 @@ function ohdsay(logger, hookURL, Pings)
                         {
                             "name": "]]..emot_world..[[ World Info",
                             "value": "]]..ShowWorld..[[",
-                            "inline": "true"
-                        },
-                        {
-                            "name": "]]..emot_gems..[[ All Gems and Timers",
-                            "value": "]]..AllGems..[[ Gems\n]]..BotRun..[[",
                             "inline": "true"
                         }
                     ]
@@ -396,6 +391,12 @@ function ohdsay(logger, hookURL, Pings)
                             "value": "]]..ShowSeed..[[",
                             "inline": "true"
                         },
+                        {
+                            "name": ":timer: Bot Active",
+                            "value": "]]..BotRun..[[",
+                            "inline": "true"
+                        },
+                        
                         {
                             "name": "]]..emot_tas..[[ Backpack (Sisa Seed)",
                             "value": "]]..findItem(seed)..[[ ]]..GetNameID(seed)..[[",
@@ -452,6 +453,12 @@ function ohdsay(logger, hookURL, Pings)
                             "value": "]]..ShowPack..[[",
                             "inline": "true"
                         },
+                        {
+                            "name": ":timer: Bot Active",
+                            "value": "]]..BotRun..[[",
+                            "inline": "true"
+                        },
+
                         {
                             "name": ":beginner: Other Information",
                             "value": "All Gems : ]]..SemuaGems()..[[\nOnline/Offline : (]]..StatusAktif("online")..[[/]]..StatusAktif("offline")..[[)",
