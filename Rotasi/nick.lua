@@ -16,5 +16,6 @@ ListPembeli = {
     {iddc = "877758579069845574", nick = "xMizukages8", aktif = 0},
     {iddc = "455384591050604547", nick = "ForestNatur", aktif = 0},
     {iddc = "807609578535125032", nick = "AlvinodpV2", aktif = 0},
-    {iddc = "893526990471172096", nick = "SUIHO6O8", aktif = 0}
+    {iddc = "893526990471172096", nick = "SUIHO6O8", aktif = 0},
+    {iddc = "588036562881871885", nick = "CeiMut", aktif = 0}
 }
