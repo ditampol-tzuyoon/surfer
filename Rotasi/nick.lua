@@ -81,5 +81,6 @@ ListPembeli = {
     {iddc = "963422426144854056", nick = "uu", aktif = 0},
     {iddc = "1000093777576349836", nick = "vv", aktif = 0},
     {iddc = "381719055704260608", nick = "ww", aktif = 0},
-    {iddc = "916171865716850729", nick = "xx", aktif = 0}
+    {iddc = "916171865716850729", nick = "xx", aktif = 0},
+    {iddc = "429279362932801537", nick = "yy", aktif = 0}
 }
