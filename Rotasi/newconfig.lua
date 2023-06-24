@@ -99,15 +99,19 @@ function ohdtag(logger)
         Warna = 16711680
     end
 
-    odvr = CekOff(MainHook)
+    if (ShowMainInfo) or (not HideWebhook) then
+        odvr = CekOff(MainHook)
 
-    GetDC = {}
+        GetDC = {}
 
-    for vd in string.gmatch(odvr, "[%d]+") do
-        table.insert(GetDC, vd)
+        for vd in string.gmatch(odvr, "[%d]+") do
+            table.insert(GetDC, vd)
+        end
+
+        MyTeks = "\\n~\\nDETAIL : https://discord.com/channels/"..GetDC[2].."/"..GetDC[1].."/"..HookID
+    else
+        MyTeks = ""
     end
-
-    MyTeks = "\\n~\\nDETAIL : https://discord.com/channels/"..GetDC[2].."/"..GetDC[1].."/"..HookID
 
     local RequestINFO = {}
     RequestINFO.url = PingHook
