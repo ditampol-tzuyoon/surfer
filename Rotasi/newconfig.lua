@@ -71,9 +71,9 @@ function ohdmod(logger)
     ]]
     local x = httpReq(RequestINFO)
     if x.success then
-        log("Response HTTP Status Code : ", x.httpCode)
+        log("Berhasil Ngirim Webhook! Code : ", x.httpCode)
     else
-        log("Request Failed Error Msg : ", x.failInfo)
+        log("Gagal Ngirim Webhook! Msg : ", x.failInfo)
     end
 end
 
@@ -138,9 +138,9 @@ function ohdtag(logger)
     ]]
     local x = httpReq(RequestINFO)
     if x.success then
-        log("Response HTTP Status Code : ", x.httpCode)
+        log("Berhasil Ngirim Webhook! Code : ", x.httpCode)
     else
-        log("Request Failed Error Msg : ", x.failInfo)
+        log("Gagal Ngirim Webhook! Msg : ", x.failInfo)
     end
 end
 
@@ -191,9 +191,9 @@ function odnotice(logger)
     ]]
     local x = httpReq(RequestINFO)
     if x.success then
-        log("Response HTTP Status Code : ", x.httpCode)
+        log("Berhasil Ngirim Webhook! Code : ", x.httpCode)
     else
-        log("Request Failed Error Msg : ", x.failInfo)
+        log("Gagal Ngirim Webhook! Msg : ", x.failInfo)
     end
 end
 
@@ -494,8 +494,8 @@ function ohdsay(logger, hookURL, Pings)
     end
 
     if x.success then
-        log("Response HTTP Status Code : ", x.httpCode)
+        log("Berhasil Ngirim Webhook! Code : ", x.httpCode)
     else
-        log("Request Failed Error Msg : ", x.failInfo)
+        log("Gagal Ngirim Webhook! Msg : ", x.failInfo)
     end
 end
