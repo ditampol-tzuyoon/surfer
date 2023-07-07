@@ -1,3 +1,5 @@
+IP_Server_OD = "139.177.185.39"
+
 function JamIni()
     virz = os.date("*t", Dovi)
     return virz.hour
