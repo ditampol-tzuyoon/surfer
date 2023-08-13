@@ -10,26 +10,6 @@ function MenitIni()
     return virz.min
 end
 
-function StatusAktif(yoopo)
-    odv = 0
-    for _, v in pairs(OdBots()) do
-        if v.status == yoopo then
-            odv = odv + 1
-        end
-    end
-    return odv
-end
-
-function SemuaGems()
-    odv = 0
-    for _, v in pairs(OdBots()) do
-        if v.status == "online" then
-            odv = odv + v.gems
-        end
-    end
-    return odv
-end
-
 Odirrrr = "https://raw.githubusercontent.com/ditampol-tzuyoon/surfer/main/Image%20Animasi.gif"
 
 LogoPartai = {
@@ -481,12 +461,6 @@ function ohdsay(logger, hookURL, Pings)
                             "name": ":timer: Bot Active",
                             "value": "]]..BotRun..[[",
                             "inline": "true"
-                        },
-
-                        {
-                            "name": ":beginner: Other Information",
-                            "value": "All Gems : ]]..SemuaGems()..[[\nOnline/Offline : (]]..StatusAktif("online")..[[/]]..StatusAktif("offline")..[[)",
-                            "inline": "false"
                         }
                     ]
                 }]
