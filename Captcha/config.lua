@@ -3,10 +3,10 @@ ListPembeli = {
 }
 
 function CekBuyer()
-    for i, v in pairs(ListPembeli) do
-        if hwid() == v then
+    --for i, v in pairs(ListPembeli) do
+      --  if hwid() == v then
             return true
-        end
-    end
-    return false
+        --end
+    --end
+    --return false
 end
