@@ -49,6 +49,9 @@ end
 
 function ohdtag(logger)
 
+    Lopar = math.random(1, #LogoPartai)
+    Judulz = "Rotasi Farm Surfer ("..versi..") || "..#ListPembeli.." Users. || Author Ohdear_"
+
     if OdBot().status == "online" then
         statzBot = ":green_circle:"
         Warna = 7405312
@@ -90,6 +93,12 @@ function ohdtag(logger)
                     "url": "]].. Odirrrr ..[["
                 },
 
+                "author": {
+                    "name": "]]..Judulz..[[",
+                    "url": "https://discord.gg/TjVwdgma74",
+                    "icon_url": "]]..LogoPartai[Lopar]..[["
+                },
+
                 "footer": {
                     "text": "Rotation Script by Ohdear_ \n]]..IniWaktu()..[["
                 }
@@ -103,6 +112,9 @@ function odnotice(logger)
 
     Ment = "<@"..userdc..">"
 
+    Lopar = math.random(1, #LogoPartai)
+    Judulz = "Rotasi Farm Surfer ("..versi..") || "..#ListPembeli.." Users. || Author Ohdear_"
+    
     if OdBot().status == "online" then
         statzBot = ":green_circle:"
         Warna = 7405312
@@ -126,6 +138,12 @@ function odnotice(logger)
                 
                 "image": {
                     "url": "]].. Odirrrr ..[["
+                },
+
+                "author": {
+                    "name": "]]..Judulz..[[",
+                    "url": "https://discord.gg/TjVwdgma74",
+                    "icon_url": "]]..LogoPartai[Lopar]..[["
                 },
 
                 "footer": {
