@@ -1,4 +1,4 @@
-IP_Server_OD = "20.51.234.101"
+IP_Server_OD = "47.90.162.79"
 
 function JamIni()
     virz = os.date("*t", Dovi)
