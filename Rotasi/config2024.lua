@@ -182,6 +182,8 @@ function ohdsay(logger, hookURL, Pings)
         Thumbs = "https://raw.githubusercontent.com/ditampol-tzuyoon/Growtopia/main/chand.webp"
     elseif block == 8640 then
         Thumbs = "https://raw.githubusercontent.com/ditampol-tzuyoon/Growtopia/main/sambalado.webp"
+    elseif block == 182 then
+        Thumbs = "https://raw.githubusercontent.com/ditampol-tzuyoon/Growtopia/main/ItemSprites.png"
     else
         Thumbs = ""
     end
