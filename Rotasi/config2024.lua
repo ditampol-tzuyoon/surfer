@@ -49,7 +49,24 @@ end
 
 function ohdtag(logger)
 
-    Lopar = math.random(1, #LogoPartai)
+    if block == 4584 then
+        Thumbs = "https://raw.githubusercontent.com/ditampol-tzuyoon/Growtopia/main/pepper.webp"
+    elseif block == 5666 then
+        Thumbs = "https://raw.githubusercontent.com/ditampol-tzuyoon/Growtopia/main/LaserGrid.webp"
+    elseif block == 3004 then
+        Thumbs = "https://raw.githubusercontent.com/ditampol-tzuyoon/Growtopia/main/ftank.webp"
+    elseif block == 340 then
+        Thumbs = "https://raw.githubusercontent.com/ditampol-tzuyoon/Growtopia/main/chand.webp"
+    elseif block == 8640 then
+        Thumbs = "https://raw.githubusercontent.com/ditampol-tzuyoon/Growtopia/main/sambalado.webp"
+    elseif block == 182 then
+        Thumbs = "https://raw.githubusercontent.com/ditampol-tzuyoon/Growtopia/main/ItemSprites.png"
+    elseif block == 954 then
+        Thumbs = "https://raw.githubusercontent.com/ditampol-tzuyoon/Growtopia/main/sugarcane.png"
+    else
+        Thumbs = ""
+    end
+    
     Judulz = "Rotasi Farm Surfer ("..versi..") || "..#ListPembeli.." Users. || Author Ohdear_"
 
     if OdBot().status == "online" then
@@ -112,7 +129,24 @@ function odnotice(logger)
 
     Ment = "<@"..userdc..">"
 
-    Lopar = math.random(1, #LogoPartai)
+    if block == 4584 then
+        Thumbs = "https://raw.githubusercontent.com/ditampol-tzuyoon/Growtopia/main/pepper.webp"
+    elseif block == 5666 then
+        Thumbs = "https://raw.githubusercontent.com/ditampol-tzuyoon/Growtopia/main/LaserGrid.webp"
+    elseif block == 3004 then
+        Thumbs = "https://raw.githubusercontent.com/ditampol-tzuyoon/Growtopia/main/ftank.webp"
+    elseif block == 340 then
+        Thumbs = "https://raw.githubusercontent.com/ditampol-tzuyoon/Growtopia/main/chand.webp"
+    elseif block == 8640 then
+        Thumbs = "https://raw.githubusercontent.com/ditampol-tzuyoon/Growtopia/main/sambalado.webp"
+    elseif block == 182 then
+        Thumbs = "https://raw.githubusercontent.com/ditampol-tzuyoon/Growtopia/main/ItemSprites.png"
+    elseif block == 954 then
+        Thumbs = "https://raw.githubusercontent.com/ditampol-tzuyoon/Growtopia/main/sugarcane.png"
+    else
+        Thumbs = ""
+    end
+    
     Judulz = "Rotasi Farm Surfer ("..versi..") || "..#ListPembeli.." Users. || Author Ohdear_"
     
     if OdBot().status == "online" then
