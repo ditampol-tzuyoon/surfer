@@ -96,7 +96,7 @@ function ohdtag(logger)
                 "author": {
                     "name": "]]..Judulz..[[",
                     "url": "https://discord.gg/TjVwdgma74",
-                    "icon_url": "]]..LogoPartai[Lopar]..[["
+                    "icon_url": "]]..Thumbs..[["
                 },
 
                 "footer": {
@@ -143,7 +143,7 @@ function odnotice(logger)
                 "author": {
                     "name": "]]..Judulz..[[",
                     "url": "https://discord.gg/TjVwdgma74",
-                    "icon_url": "]]..LogoPartai[Lopar]..[["
+                    "icon_url": "]]..Thumbs..[["
                 },
 
                 "footer": {
@@ -184,6 +184,8 @@ function ohdsay(logger, hookURL, Pings)
         Thumbs = "https://raw.githubusercontent.com/ditampol-tzuyoon/Growtopia/main/sambalado.webp"
     elseif block == 182 then
         Thumbs = "https://raw.githubusercontent.com/ditampol-tzuyoon/Growtopia/main/ItemSprites.png"
+    elseif block == 954 then
+        Thumbs = "https://raw.githubusercontent.com/ditampol-tzuyoon/Growtopia/main/sugarcane.png"
     else
         Thumbs = ""
     end
@@ -253,7 +255,7 @@ function ohdsay(logger, hookURL, Pings)
                     },
 
                     "thumbnail": {
-                        "url": "]].. Thumbs ..[["
+                        "url": "]].. LogoPartai[Lopar] ..[["
                     },
 
                     "image": {
@@ -263,7 +265,7 @@ function ohdsay(logger, hookURL, Pings)
                     "author": {
                         "name": "]]..Judulz..[[",
                         "url": "https://discord.gg/TjVwdgma74",
-                        "icon_url": "]]..LogoPartai[Lopar]..[["
+                        "icon_url": "]]..Thumbs..[["
                     },
 
                     "fields": [
@@ -338,7 +340,7 @@ function ohdsay(logger, hookURL, Pings)
                     },
 
                     "thumbnail": {
-                        "url": "]].. Thumbs ..[["
+                        "url": "]].. LogoPartai[Lopar] ..[["
                     },
 
                     "image": {
@@ -348,7 +350,7 @@ function ohdsay(logger, hookURL, Pings)
                     "author": {
                         "name": "]]..Judulz..[[",
                         "url": "https://discord.gg/TjVwdgma74",
-                        "icon_url": "]]..LogoPartai[Lopar]..[["
+                        "icon_url": "]]..Thumbs..[["
                     },
 
                     "fields": [
@@ -400,7 +402,7 @@ function ohdsay(logger, hookURL, Pings)
                     },
 
                     "thumbnail": {
-                        "url": "]].. Thumbs ..[["
+                        "url": "]].. LogoPartai[Lopar] ..[["
                     },
 
                     "image": {
@@ -410,7 +412,7 @@ function ohdsay(logger, hookURL, Pings)
                     "author": {
                         "name": "]]..Judulz..[[",
                         "url": "https://discord.gg/TjVwdgma74",
-                        "icon_url": "]]..LogoPartai[Lopar]..[["
+                        "icon_url": "]]..Thumbs..[["
                     },
 
                     "fields": [
