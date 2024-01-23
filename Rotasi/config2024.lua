@@ -118,7 +118,20 @@ function ohdtag(logger)
 
                 "footer": {
                     "text": "Rotation Script by Ohdear_ \n]]..IniWaktu()..[["
-                }
+                },
+    
+                "fields": [
+                    {
+                        "name": "]]..emot_bot..[[ Bot Name",
+                        "value": "]]..OdBot().name..[[ **(]]..getPing()..[[ Ms)**",
+                        "inline": "true"
+                    },
+                    {
+                        "name": ":timer: Bot Active",
+                        "value": "]]..BotRun..[[",
+                        "inline": "true"
+                    }
+                ]
             }]
         }
     ]]
@@ -182,7 +195,20 @@ function odnotice(logger)
 
                 "footer": {
                     "text": "Rotation Script by Ohdear_ \n]]..IniWaktu()..[["
-                }
+                },
+    
+                "fields": [
+                    {
+                        "name": "]]..emot_bot..[[ Bot Name",
+                        "value": "]]..OdBot().name..[[ **(]]..getPing()..[[ Ms)**",
+                        "inline": "true"
+                    },
+                    {
+                        "name": ":timer: Bot Active",
+                        "value": "]]..BotRun..[[",
+                        "inline": "true"
+                    }
+                ]
             }]
         }
     ]]
