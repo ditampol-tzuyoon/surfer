@@ -123,7 +123,7 @@ function ohdtag(logger)
                 "fields": [
                     {
                         "name": "]]..emot_bot..[[ Bot Name",
-                        "value": "]]..OdBot().name..[[ **(]]..getPing()..[[ Ms)**",
+                        "value": "]]..OdBot().name..[[ **(]]..getPing()..[[ Ms | Lv]]..OdBot().level..[[)**",
                         "inline": "true"
                     },
                     {
@@ -200,7 +200,7 @@ function odnotice(logger)
                 "fields": [
                     {
                         "name": "]]..emot_bot..[[ Bot Name",
-                        "value": "]]..OdBot().name..[[ **(]]..getPing()..[[ Ms)**",
+                        "value": "]]..OdBot().name..[[ **(]]..getPing()..[[ Ms | Lv]]..OdBot().level..[[)**",
                         "inline": "true"
                     },
                     {
