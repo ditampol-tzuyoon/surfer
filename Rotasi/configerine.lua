@@ -416,7 +416,7 @@ function ohdsay(logger, TypeHook, Pings)
                     "fields": [
                         {
                             "name": "]]..emot_bot..[[ Bot Name",
-                            "value": "]]..OdBot().name..[[ **(]]..getPing()..[[ Ms)**",
+                            "value": "]]..OdBot().name..[[ **(]]..getPing()..[[ Ms | Lv]]..OdBot().level..[[)**",
                             "inline": "false"
                         },
 
@@ -479,7 +479,7 @@ function ohdsay(logger, TypeHook, Pings)
                     "fields": [
                         {
                             "name": "]]..emot_bot..[[ Bot Name",
-                            "value": "]]..OdBot().name..[[ **(]]..getPing()..[[ Ms)**",
+                            "value": "]]..OdBot().name..[[ **(]]..getPing()..[[ Ms | Lv]]..OdBot().level..[[)**",
                             "inline": "false"
                         },
 
@@ -536,7 +536,7 @@ function ohdsay(logger, TypeHook, Pings)
                     "fields": [
                         {
                             "name": "]]..emot_bot..[[ Bot Name",
-                            "value": "]]..OdBot().name..[[ **(]]..getPing()..[[ Ms)**",
+                            "value": "]]..OdBot().name..[[ **(]]..getPing()..[[ Ms | Lv]]..OdBot().level..[[)**",
                             "inline": "false"
                         },
 
