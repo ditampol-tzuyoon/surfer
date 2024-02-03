@@ -541,8 +541,8 @@ function ohdsay(logger, TypeHook, Pings)
                         },
 
                         {
-                            "name": "]]..emot_pack..[[ ]]..namapack:upper()..[[",
-                            "value": "]]..ShowPack..[[",
+                            "name": "]]..emot_pack..[[ SPECIAL ITEM",
+                            "value": "]]..ShowSpec..[[",
                             "inline": "true"
                         },
                         {
