@@ -18,20 +18,16 @@ LogoPartai = {
     "https://raw.githubusercontent.com/ditampol-tzuyoon/Growtopia/main/Erine/13.jpg"
 }
 
-function ohdmod(logger)
-
-    InfoBy = "\\nInfo By <@"..userdc..">"
-    TagRole = "<@&1057182557185257522>"
-    Warna = 16711680
+function ohdmod(url, logger)
 
     local RequestINFO = {}
-    RequestINFO.url = modpek
+    RequestINFO.url = url
     RequestINFO.json = true
     RequestINFO.method=POST
     RequestINFO.postData = [[
         {
             "embeds": [{
-                "description": "]].. logger .." "..InfoBy..[[",
+                "description": "]].. logger ..[[",
                 "color": "]] .. math.random(0, 16777215) .. [[",
 
                 "image": {
