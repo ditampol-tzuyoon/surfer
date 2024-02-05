@@ -87,6 +87,12 @@ end
 
 function ohdtag(logger)
 
+    if TargetGems then
+        ScanGems = " | "..findItem(112).." Gems"
+    else
+        ScanGems = ""
+    end
+
     if block == 4584 then
         Thumbs = "https://raw.githubusercontent.com/ditampol-tzuyoon/Growtopia/main/pepper.webp"
     elseif block == 5666 then
@@ -161,7 +167,7 @@ function ohdtag(logger)
                 "fields": [
                     {
                         "name": "]]..emot_bot..[[ Bot Name",
-                        "value": "]]..OdBot().name..[[ **(]]..getPing()..[[ Ms | Lv]]..OdBot().level..[[)**",
+                        "value": "]]..OdBot().name..[[ **(]]..getPing()..[[ Ms | Lv]]..OdBot().level..[[]]..ScanGems..[[)**",
                         "inline": "true"
                     },
                     {
@@ -179,6 +185,12 @@ end
 function odnotice(logger)
 
     Ment = "<@"..userdc..">"
+
+    if TargetGems then
+        ScanGems = " | "..findItem(112).." Gems"
+    else
+        ScanGems = ""
+    end
 
     if block == 4584 then
         Thumbs = "https://raw.githubusercontent.com/ditampol-tzuyoon/Growtopia/main/pepper.webp"
@@ -238,7 +250,7 @@ function odnotice(logger)
                 "fields": [
                     {
                         "name": "]]..emot_bot..[[ Bot Name",
-                        "value": "]]..OdBot().name..[[ **(]]..getPing()..[[ Ms | Lv]]..OdBot().level..[[)**",
+                        "value": "]]..OdBot().name..[[ **(]]..getPing()..[[ Ms | Lv]]..OdBot().level..[[]]..ScanGems..[[)**",
                         "inline": "true"
                     },
                     {
