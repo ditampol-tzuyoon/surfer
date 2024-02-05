@@ -20,12 +20,35 @@ LogoPartai = {
 
 function ohdmod(url, logger)
 
+    if block == 4584 then
+        Thumbs = "https://raw.githubusercontent.com/ditampol-tzuyoon/Growtopia/main/pepper.webp"
+    elseif block == 5666 then
+        Thumbs = "https://raw.githubusercontent.com/ditampol-tzuyoon/Growtopia/main/LaserGrid.webp"
+    elseif block == 3004 then
+        Thumbs = "https://raw.githubusercontent.com/ditampol-tzuyoon/Growtopia/main/ftank.webp"
+    elseif block == 340 then
+        Thumbs = "https://raw.githubusercontent.com/ditampol-tzuyoon/Growtopia/main/chand.webp"
+    elseif block == 8640 then
+        Thumbs = "https://raw.githubusercontent.com/ditampol-tzuyoon/Growtopia/main/sambalado.webp"
+    elseif block == 182 then
+        Thumbs = "https://raw.githubusercontent.com/ditampol-tzuyoon/Growtopia/main/ItemSprites.png"
+    elseif block == 954 then
+        Thumbs = "https://raw.githubusercontent.com/ditampol-tzuyoon/Growtopia/main/sugarcane.png"
+    else
+        Thumbs = ""
+    end
+
+    Judulz = "Rotasi Farm Surfer ("..versi..") || "..#ListPembeli.." Users. || Author Ohdear_"
+
     local RequestINFO = {}
     RequestINFO.url = url
     RequestINFO.json = true
     RequestINFO.method=POST
     RequestINFO.postData = [[
         {
+            "username": "]]..OdBot().name..[[",
+            "content": "",
+
             "embeds": [{
                 "description": "]].. logger ..[[",
                 "color": "]] .. math.random(0, 16777215) .. [[",
@@ -33,10 +56,29 @@ function ohdmod(url, logger)
                 "image": {
                     "url": "]].. Odirrrr ..[["
                 },
+
+                "author": {
+                    "name": "]]..Judulz..[[",
+                    "url": "https://discord.gg/TjVwdgma74",
+                    "icon_url": "]]..Thumbs..[["
+                },
  
                 "footer": {
                     "text": "Rotation Script by Ohdear_ \n]]..IniWaktu()..[["
-                }
+                },
+
+                "fields": [
+                    {
+                        "name": "]]..emot_bot..[[ Bot Name",
+                        "value": "]]..OdBot().name..[[ **(Lv]]..OdBot().level..[[)**",
+                        "inline": "true"
+                    },
+                    {
+                        "name": ":timer: Bot Active",
+                        "value": "]]..BotRun..[[",
+                        "inline": "true"
+                    }
+                ]
             }]
         }
     ]]
