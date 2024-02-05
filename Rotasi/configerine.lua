@@ -88,7 +88,7 @@ end
 function ohdtag(logger)
 
     if TargetGems then
-        ScanGems = " | "..findItem(112).." Gems"
+        ScanGems = "\\n"..findItem(112).." / "..TargetGems.." Gems"
     else
         ScanGems = ""
     end
@@ -167,7 +167,7 @@ function ohdtag(logger)
                 "fields": [
                     {
                         "name": "]]..emot_bot..[[ Bot Name",
-                        "value": "]]..OdBot().name..[[ **(]]..getPing()..[[ Ms | Lv]]..OdBot().level..[[]]..ScanGems..[[)**",
+                        "value": "]]..OdBot().name..[[ **(]]..getPing()..[[ Ms | Lv]]..OdBot().level..[[)**]]..ScanGems..[[",
                         "inline": "true"
                     },
                     {
@@ -187,7 +187,7 @@ function odnotice(logger)
     Ment = "<@"..userdc..">"
 
     if TargetGems then
-        ScanGems = " | "..findItem(112).." Gems"
+        ScanGems = "\\n"..findItem(112).." / "..TargetGems.." Gems"
     else
         ScanGems = ""
     end
