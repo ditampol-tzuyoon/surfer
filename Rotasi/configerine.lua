@@ -114,12 +114,12 @@ function ohdtag(logger)
     Judulz = "Rotasi Farm Surfer ("..versi..") || "..#ListPembeli.." Users. || Author Ohdear_"
 
     if OdBot().status == "online" then
-        statzBot = ":green_circle:"
+        statzBot = "<a:Onlen:1206807819370758204>"
         Warna = 7405312
         Ment = ""
     else
         Ment = "<@"..userdc..">"
-        statzBot = ":red_circle:"
+        statzBot = "<a:Oflen:1206807838996045844>"
         Warna = 16711680
     end
 
@@ -141,44 +141,53 @@ function ohdtag(logger)
     RequestINFO.url = PingHook
     RequestINFO.json = true
     RequestINFO.method=POST
-    RequestINFO.postData = [[
-        {
-            "username": "]]..OdBot().name..[[",
-            "content": "]]..Ment..[[",
-            
-            "embeds": [{
-                "description": "]].. logger ..[[ ]]..MyTeks..[[",
-                "color": "]] .. Warna .. [[",
+    if SimplePinghook then
+        RequestINFO.postData = [[
+            {
+                "username": "]]..OdBot().name..[[",
+                "content": "]]..statzBot..[[ | ]]..logger..[[ | **Lv]]..OdBot().level..[[** | ]]..Ment..[["
+            }
+        ]]
+    else
+        RequestINFO.postData = [[
+            {
+                "username": "]]..OdBot().name..[[",
+                "content": "]]..Ment..[[",
+                
+                "embeds": [{
+                    "description": "]].. logger ..[[ ]]..MyTeks..[[",
+                    "color": "]] .. Warna .. [[",
 
-                "image": {
-                    "url": "]].. Odirrrr ..[["
-                },
-
-                "author": {
-                    "name": "]]..Judulz..[[",
-                    "url": "https://discord.gg/TjVwdgma74",
-                    "icon_url": "]]..Thumbs..[["
-                },
-
-                "footer": {
-                    "text": "Rotation Script by Ohdear_ \n]]..IniWaktu()..[["
-                },
-    
-                "fields": [
-                    {
-                        "name": "]]..emot_bot..[[ Bot Name",
-                        "value": "]]..OdBot().name..[[ **(]]..getPing()..[[ Ms | Lv]]..OdBot().level..[[)**]]..ScanGems..[[",
-                        "inline": "true"
+                    "image": {
+                        "url": "]].. Odirrrr ..[["
                     },
-                    {
-                        "name": ":timer: Bot Active",
-                        "value": "]]..BotRun..[[",
-                        "inline": "true"
-                    }
-                ]
-            }]
-        }
-    ]]
+
+                    "author": {
+                        "name": "]]..Judulz..[[",
+                        "url": "https://discord.gg/TjVwdgma74",
+                        "icon_url": "]]..Thumbs..[["
+                    },
+
+                    "footer": {
+                        "text": "Rotation Script by Ohdear_ \n]]..IniWaktu()..[["
+                    },
+        
+                    "fields": [
+                        {
+                            "name": "]]..emot_bot..[[ Bot Name",
+                            "value": "]]..OdBot().name..[[ **(]]..getPing()..[[ Ms | Lv]]..OdBot().level..[[)**]]..ScanGems..[[",
+                            "inline": "true"
+                        },
+                        {
+                            "name": ":timer: Bot Active",
+                            "value": "]]..BotRun..[[",
+                            "inline": "true"
+                        }
+                    ]
+                }]
+            }
+        ]]
+    end
     httpReq(RequestINFO)
 end
 
@@ -213,10 +222,10 @@ function odnotice(logger)
     Judulz = "Rotasi Farm Surfer ("..versi..") || "..#ListPembeli.." Users. || Author Ohdear_"
     
     if OdBot().status == "online" then
-        statzBot = ":green_circle:"
+        statzBot = "<a:Onlen:1206807819370758204>"
         Warna = 7405312
     else
-        statzBot = ":red_circle:"
+        statzBot = "<a:Oflen:1206807838996045844>"
         Warna = 16711680
     end
 
@@ -224,44 +233,53 @@ function odnotice(logger)
     RequestINFO.url = PingHook
     RequestINFO.json = true
     RequestINFO.method=POST
-    RequestINFO.postData = [[
-        {
-            "username": "]]..OdBot().name..[[",
-            "content": "]]..Ment..[[",
+    if SimplePinghook then
+        RequestINFO.postData = [[
+            {
+                "username": "]]..OdBot().name..[[",
+                "content": "]]..statzBot..[[ | ]]..logger..[[ | **Lv]]..OdBot().level..[[** | ]]..Ment..[["
+            }
+        ]]
+    else
+        RequestINFO.postData = [[
+            {
+                "username": "]]..OdBot().name..[[",
+                "content": "]]..Ment..[[",
 
-            "embeds": [{
-                "description": "]].. logger ..[[",
-                "color": "]] .. Warna .. [[",
-                
-                "image": {
-                    "url": "]].. Odirrrr ..[["
-                },
-
-                "author": {
-                    "name": "]]..Judulz..[[",
-                    "url": "https://discord.gg/TjVwdgma74",
-                    "icon_url": "]]..Thumbs..[["
-                },
-
-                "footer": {
-                    "text": "Rotation Script by Ohdear_ \n]]..IniWaktu()..[["
-                },
-    
-                "fields": [
-                    {
-                        "name": "]]..emot_bot..[[ Bot Name",
-                        "value": "]]..OdBot().name..[[ **(]]..getPing()..[[ Ms | Lv]]..OdBot().level..[[]]..ScanGems..[[)**",
-                        "inline": "true"
+                "embeds": [{
+                    "description": "]].. logger ..[[",
+                    "color": "]] .. Warna .. [[",
+                    
+                    "image": {
+                        "url": "]].. Odirrrr ..[["
                     },
-                    {
-                        "name": ":timer: Bot Active",
-                        "value": "]]..BotRun..[[",
-                        "inline": "true"
-                    }
-                ]
-            }]
-        }
-    ]]
+
+                    "author": {
+                        "name": "]]..Judulz..[[",
+                        "url": "https://discord.gg/TjVwdgma74",
+                        "icon_url": "]]..Thumbs..[["
+                    },
+
+                    "footer": {
+                        "text": "Rotation Script by Ohdear_ \n]]..IniWaktu()..[["
+                    },
+        
+                    "fields": [
+                        {
+                            "name": "]]..emot_bot..[[ Bot Name",
+                            "value": "]]..OdBot().name..[[ **(]]..getPing()..[[ Ms | Lv]]..OdBot().level..[[]]..ScanGems..[[)**",
+                            "inline": "true"
+                        },
+                        {
+                            "name": ":timer: Bot Active",
+                            "value": "]]..BotRun..[[",
+                            "inline": "true"
+                        }
+                    ]
+                }]
+            }
+        ]]
+    end
     httpReq(RequestINFO)
 end
 
@@ -337,10 +355,10 @@ function ohdsay(logger, TypeHook, Pings)
     end
 
     if OdBot().status == "online" then
-        statzBot = ":green_circle:"
+        statzBot = "<a:Onlen:1206807819370758204>"
         Warna = 7405312
     else
-        statzBot = ":red_circle:"
+        statzBot = "<a:Oflen:1206807838996045844>"
         Warna = 16711680
     end
 
