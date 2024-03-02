@@ -1,0 +1,624 @@
+IP_Server_OD = "47.90.162.79"
+
+Odirrrr = "https://raw.githubusercontent.com/ditampol-tzuyoon/surfer/main/Image%20Animasi.gif"
+
+LogoPartai = {
+    "https://raw.githubusercontent.com/ditampol-tzuyoon/Growtopia/main/Erine/1.jpg",
+    "https://raw.githubusercontent.com/ditampol-tzuyoon/Growtopia/main/Erine/2.jpg",
+    "https://raw.githubusercontent.com/ditampol-tzuyoon/Growtopia/main/Erine/3.jpg",
+    "https://raw.githubusercontent.com/ditampol-tzuyoon/Growtopia/main/Erine/4.jpg",
+    "https://raw.githubusercontent.com/ditampol-tzuyoon/Growtopia/main/Erine/5.jpg",
+    "https://raw.githubusercontent.com/ditampol-tzuyoon/Growtopia/main/Erine/6.jpg",
+    "https://raw.githubusercontent.com/ditampol-tzuyoon/Growtopia/main/Erine/7.jpg",
+    "https://raw.githubusercontent.com/ditampol-tzuyoon/Growtopia/main/Erine/8.jpg",
+    "https://raw.githubusercontent.com/ditampol-tzuyoon/Growtopia/main/Erine/9.jpg",
+    "https://raw.githubusercontent.com/ditampol-tzuyoon/Growtopia/main/Erine/10.jpg",
+    "https://raw.githubusercontent.com/ditampol-tzuyoon/Growtopia/main/Erine/11.jpg",
+    "https://raw.githubusercontent.com/ditampol-tzuyoon/Growtopia/main/Erine/12.jpg",
+    "https://raw.githubusercontent.com/ditampol-tzuyoon/Growtopia/main/Erine/13.jpg"
+}
+
+function ohdmod(url, logger)
+
+    if block == 4584 then
+        Thumbs = "https://raw.githubusercontent.com/ditampol-tzuyoon/Growtopia/main/pepper.webp"
+    elseif block == 5666 then
+        Thumbs = "https://raw.githubusercontent.com/ditampol-tzuyoon/Growtopia/main/LaserGrid.webp"
+    elseif block == 3004 then
+        Thumbs = "https://raw.githubusercontent.com/ditampol-tzuyoon/Growtopia/main/ftank.webp"
+    elseif block == 340 then
+        Thumbs = "https://raw.githubusercontent.com/ditampol-tzuyoon/Growtopia/main/chand.webp"
+    elseif block == 8640 then
+        Thumbs = "https://raw.githubusercontent.com/ditampol-tzuyoon/Growtopia/main/sambalado.webp"
+    elseif block == 182 then
+        Thumbs = "https://raw.githubusercontent.com/ditampol-tzuyoon/Growtopia/main/ItemSprites.png"
+    elseif block == 954 then
+        Thumbs = "https://raw.githubusercontent.com/ditampol-tzuyoon/Growtopia/main/sugarcane.png"
+    else
+        Thumbs = ""
+    end
+
+    Judulz = "Rotasi Farm Surfer ("..versi..") || "..#ListPembeli.." Users. || Author Ohdear_"
+
+    local RequestINFO = {}
+    RequestINFO.url = url
+    RequestINFO.json = true
+    RequestINFO.method=POST
+    RequestINFO.postData = [[
+        {
+            "username": "]]..OdBot().name..[[",
+            "content": "",
+
+            "embeds": [{
+                "description": "]].. logger ..[[",
+                "color": "]] .. math.random(0, 16777215) .. [[",
+
+                "image": {
+                    "url": "]].. Odirrrr ..[["
+                },
+
+                "author": {
+                    "name": "]]..Judulz..[[",
+                    "url": "https://discord.gg/TjVwdgma74",
+                    "icon_url": "]]..Thumbs..[["
+                },
+ 
+                "footer": {
+                    "text": "Rotation Script by Ohdear_ \n]]..IniWaktu()..[["
+                },
+
+                "fields": [
+                    {
+                        "name": "]]..emot_bot..[[ Bot Name",
+                        "value": "]]..OdBot().name..[[ **(Lv]]..OdBot().level..[[)**",
+                        "inline": "true"
+                    },
+                    {
+                        "name": ":timer: Bot Active",
+                        "value": "]]..BotRun..[[",
+                        "inline": "true"
+                    }
+                ]
+            }]
+        }
+    ]]
+    httpReq(RequestINFO)
+end
+
+function ohdtag(logger)
+
+    if TargetGems then
+        ScanGems = "\\n"..findItem(112).." / "..TargetGems.." Gems"
+    else
+        ScanGems = ""
+    end
+
+    if block == 4584 then
+        Thumbs = "https://raw.githubusercontent.com/ditampol-tzuyoon/Growtopia/main/pepper.webp"
+    elseif block == 5666 then
+        Thumbs = "https://raw.githubusercontent.com/ditampol-tzuyoon/Growtopia/main/LaserGrid.webp"
+    elseif block == 3004 then
+        Thumbs = "https://raw.githubusercontent.com/ditampol-tzuyoon/Growtopia/main/ftank.webp"
+    elseif block == 340 then
+        Thumbs = "https://raw.githubusercontent.com/ditampol-tzuyoon/Growtopia/main/chand.webp"
+    elseif block == 8640 then
+        Thumbs = "https://raw.githubusercontent.com/ditampol-tzuyoon/Growtopia/main/sambalado.webp"
+    elseif block == 182 then
+        Thumbs = "https://raw.githubusercontent.com/ditampol-tzuyoon/Growtopia/main/ItemSprites.png"
+    elseif block == 954 then
+        Thumbs = "https://raw.githubusercontent.com/ditampol-tzuyoon/Growtopia/main/sugarcane.png"
+    else
+        Thumbs = ""
+    end
+    
+    Judulz = "Rotasi Farm Surfer ("..versi..") || "..#ListPembeli.." Users. || Author Ohdear_"
+
+    if OdBot().status == "online" then
+        statzBot = "<a:Onlen:1206807819370758204>"
+        Warna = 7405312
+        Ment = ""
+    else
+        Ment = "<@"..userdc..">"
+        statzBot = "<a:Oflen:1206807838996045844>"
+        Warna = 16711680
+    end
+
+    if (ShowMainInfo) or (not HideWebhook) then
+        odvr = CekOff(MainHook)
+
+        GetDC = {}
+
+        for vd in string.gmatch(odvr, "[%d]+") do
+            table.insert(GetDC, vd)
+        end
+
+        MyTeks = "\\n~\\nDETAIL : https://discord.com/channels/"..GetDC[2].."/"..GetDC[1].."/"..HookID
+    else
+        MyTeks = ""
+    end
+
+    local RequestINFO = {}
+    RequestINFO.url = PingHook
+    RequestINFO.json = true
+    RequestINFO.method=POST
+    if SimplePinghook then
+        RequestINFO.postData = [[
+            {
+                "username": "]]..OdBot().name..[[",
+                "content": "]]..statzBot..[[ | ]]..logger..[[ | **Lv]]..OdBot().level..[[** | ]]..Ment..[["
+            }
+        ]]
+    else
+        RequestINFO.postData = [[
+            {
+                "username": "]]..OdBot().name..[[",
+                "content": "]]..Ment..[[",
+                
+                "embeds": [{
+                    "description": "]].. logger ..[[ ]]..MyTeks..[[",
+                    "color": "]] .. Warna .. [[",
+
+                    "image": {
+                        "url": "]].. Odirrrr ..[["
+                    },
+
+                    "author": {
+                        "name": "]]..Judulz..[[",
+                        "url": "https://discord.gg/TjVwdgma74",
+                        "icon_url": "]]..Thumbs..[["
+                    },
+
+                    "footer": {
+                        "text": "Rotation Script by Ohdear_ \n]]..IniWaktu()..[["
+                    },
+        
+                    "fields": [
+                        {
+                            "name": "]]..emot_bot..[[ Bot Name",
+                            "value": "]]..OdBot().name..[[ **(]]..getPing()..[[ Ms | Lv]]..OdBot().level..[[)**]]..ScanGems..[[",
+                            "inline": "true"
+                        },
+                        {
+                            "name": ":timer: Bot Active",
+                            "value": "]]..BotRun..[[",
+                            "inline": "true"
+                        }
+                    ]
+                }]
+            }
+        ]]
+    end
+    httpReq(RequestINFO)
+end
+
+function odnotice(logger)
+
+    Ment = "<@"..userdc..">"
+
+    if TargetGems then
+        ScanGems = "\\n"..findItem(112).." / "..TargetGems.." Gems"
+    else
+        ScanGems = ""
+    end
+
+    if block == 4584 then
+        Thumbs = "https://raw.githubusercontent.com/ditampol-tzuyoon/Growtopia/main/pepper.webp"
+    elseif block == 5666 then
+        Thumbs = "https://raw.githubusercontent.com/ditampol-tzuyoon/Growtopia/main/LaserGrid.webp"
+    elseif block == 3004 then
+        Thumbs = "https://raw.githubusercontent.com/ditampol-tzuyoon/Growtopia/main/ftank.webp"
+    elseif block == 340 then
+        Thumbs = "https://raw.githubusercontent.com/ditampol-tzuyoon/Growtopia/main/chand.webp"
+    elseif block == 8640 then
+        Thumbs = "https://raw.githubusercontent.com/ditampol-tzuyoon/Growtopia/main/sambalado.webp"
+    elseif block == 182 then
+        Thumbs = "https://raw.githubusercontent.com/ditampol-tzuyoon/Growtopia/main/ItemSprites.png"
+    elseif block == 954 then
+        Thumbs = "https://raw.githubusercontent.com/ditampol-tzuyoon/Growtopia/main/sugarcane.png"
+    else
+        Thumbs = ""
+    end
+    
+    Judulz = "Rotasi Farm Surfer ("..versi..") || "..#ListPembeli.." Users. || Author Ohdear_"
+    
+    if OdBot().status == "online" then
+        statzBot = "<a:Onlen:1206807819370758204>"
+        Warna = 7405312
+    else
+        statzBot = "<a:Oflen:1206807838996045844>"
+        Warna = 16711680
+    end
+
+    local RequestINFO = {}
+    RequestINFO.url = PingHook
+    RequestINFO.json = true
+    RequestINFO.method=POST
+    if SimplePinghook then
+        RequestINFO.postData = [[
+            {
+                "username": "]]..OdBot().name..[[",
+                "content": "]]..statzBot..[[ | ]]..logger..[[ | **Lv]]..OdBot().level..[[** | ]]..Ment..[["
+            }
+        ]]
+    else
+        RequestINFO.postData = [[
+            {
+                "username": "]]..OdBot().name..[[",
+                "content": "]]..Ment..[[",
+
+                "embeds": [{
+                    "description": "]].. logger ..[[",
+                    "color": "]] .. Warna .. [[",
+                    
+                    "image": {
+                        "url": "]].. Odirrrr ..[["
+                    },
+
+                    "author": {
+                        "name": "]]..Judulz..[[",
+                        "url": "https://discord.gg/TjVwdgma74",
+                        "icon_url": "]]..Thumbs..[["
+                    },
+
+                    "footer": {
+                        "text": "Rotation Script by Ohdear_ \n]]..IniWaktu()..[["
+                    },
+        
+                    "fields": [
+                        {
+                            "name": "]]..emot_bot..[[ Bot Name",
+                            "value": "]]..OdBot().name..[[ **(]]..getPing()..[[ Ms | Lv]]..OdBot().level..[[]]..ScanGems..[[)**",
+                            "inline": "true"
+                        },
+                        {
+                            "name": ":timer: Bot Active",
+                            "value": "]]..BotRun..[[",
+                            "inline": "true"
+                        }
+                    ]
+                }]
+            }
+        ]]
+    end
+    httpReq(RequestINFO)
+end
+
+function ohdsay(logger, TypeHook, Pings)
+
+    Lopar = math.random(1, #LogoPartai)
+    Judulz = "Rotasi Farm Surfer ("..versi..") || "..#ListPembeli.." Users. || Author Ohdear_"
+
+    if Pings then
+        Ment = "<@"..userdc..">"
+    else
+        Ment = ""
+    end
+
+    if Istirahat then
+        TempOff = "\\n~\\n**Bot akan Off Tiap Jam (_" ..InfoTidur().. "_) Selama " .. DelayTidur .. " Menit.**\\n~\\n"
+    else
+        TempOff = ""
+    end
+
+    if block == 4584 then
+        Thumbs = "https://raw.githubusercontent.com/ditampol-tzuyoon/Growtopia/main/pepper.webp"
+    elseif block == 5666 then
+        Thumbs = "https://raw.githubusercontent.com/ditampol-tzuyoon/Growtopia/main/LaserGrid.webp"
+    elseif block == 3004 then
+        Thumbs = "https://raw.githubusercontent.com/ditampol-tzuyoon/Growtopia/main/ftank.webp"
+    elseif block == 340 then
+        Thumbs = "https://raw.githubusercontent.com/ditampol-tzuyoon/Growtopia/main/chand.webp"
+    elseif block == 8640 then
+        Thumbs = "https://raw.githubusercontent.com/ditampol-tzuyoon/Growtopia/main/sambalado.webp"
+    elseif block == 182 then
+        Thumbs = "https://raw.githubusercontent.com/ditampol-tzuyoon/Growtopia/main/ItemSprites.png"
+    elseif block == 954 then
+        Thumbs = "https://raw.githubusercontent.com/ditampol-tzuyoon/Growtopia/main/sugarcane.png"
+    else
+        Thumbs = ""
+    end
+
+    AllDelay = "\\n~\\nBreak / Place / HT / Plant / World : **("
+    ..delaypnb.." / "..delayplace.." / "..delayht.." / "
+    ..delayplant.." / "..delayworld..")**"
+
+    if findClothes(98) then
+        PickBotz = ":green_circle: **Pickaxe** (x"..findItem(98)..")"
+    else
+        PickBotz = ":red_circle: **Pickaxe** (x"..findItem(98)..")"
+    end
+
+    WorldSkrg = (OdBot().world):upper()
+    if RingkasWorldName then
+        Muncul = false
+        for _, v in pairs(World) do
+            if v:upper() == WorldSkrg then
+                Muncul = true
+            end
+        end
+        if WorldPack:upper() == WorldSkrg then
+            Muncul = true
+        end
+        if WorldSeed:upper() == WorldSkrg then
+            Muncul = true
+        end
+        if WorldAxe:upper() == WorldSkrg then
+            Muncul = true
+        end
+        if Muncul then
+            WorldSkrg = WorldSkrg:gsub(string.sub(WorldSkrg, 1, string.len(WorldSkrg) - 3), "")
+        end
+    end
+
+    if OdBot().status == "online" then
+        statzBot = "<a:Onlen:1206807819370758204>"
+        Warna = 7405312
+    else
+        statzBot = "<a:Oflen:1206807838996045844>"
+        Warna = 16711680
+    end
+
+    if TypeHook == "MainHook" and (not HideWebhook or ShowMainInfo) then
+
+        local RequestINFO = {}
+        RequestINFO.url = MainHook.."/messages/"..HookID
+        RequestINFO.json = true
+        RequestINFO.method=PATCH
+        RequestINFO.postData = [[
+            {
+                "username": "]]..OdBot().name..[[",
+                "content": "]]..Ment..[[",
+
+                "embeds": [{
+                    "description": "]].. logger ..[[",
+                    "color": "]] .. Warna .. [[",
+
+                    "footer": {
+                        "text": "Rotation Script by Ohdear_ \n]]..IniWaktu()..[[",
+                        "icon_url": "]].. Thumbs ..[["
+                    },
+
+                    "thumbnail": {
+                        "url": "]].. LogoPartai[Lopar] ..[["
+                    },
+
+                    "image": {
+                        "url": "]].. Odirrrr ..[["
+                    },
+
+                    "author": {
+                        "name": "]]..Judulz..[[",
+                        "url": "https://discord.gg/TjVwdgma74",
+                        "icon_url": "]]..Thumbs..[["
+                    },
+
+                    "fields": [
+                        {
+                            "name": "]]..emot_bot..[[ Bot Name",
+                            "value": "]]..OdBot().name..[[ **(Lv ]]..OdBot().level..[[)**",
+                            "inline": "false"
+                        },
+
+                        {
+                            "name": ":earth_asia: Current World",
+                            "value": "]]..WorldSkrg..[[",
+                            "inline": "true"
+                        },
+                        {
+                            "name": "]]..emot_pickaxe..[[ Tools",
+                            "value": "]]..PickBotz..[[",
+                            "inline": "true"
+                        },
+
+
+                        {
+                            "name": "]]..statzBot..[[ Bot Status",
+                            "value": "]]..(OdBot().status):upper()..[[ **(]]..getPing()..[[ Ms)**",
+                            "inline": "true"
+                        },
+                        {
+                            "name": "]]..emot_tas..[[ Inventory Slot",
+                            "value": "]]..(#getInventory() + 1)..[[/]]..OdBot().slots..[[",
+                            "inline": "true"
+                        },
+                        {
+                            "name": "]]..emot_gems..[[ Gems in Backpack",
+                            "value": "]]..findItem(112)..[[/]]..hargapack..[[\n]]..AllGems..[[ Gems\n]]..BotRun..[[",
+                            "inline": "true"
+                        },
+                        
+                        {
+                            "name": ":gem: ]]..GetNameID(FavItem)..[[ in Backpack",
+                            "value": "]]..(findItem(FavItem))..[[ Items",
+                            "inline": "true"
+                        },
+                        {
+                            "name": "]]..emot_world..[[ World Info",
+                            "value": "]]..ShowWorld..[[",
+                            "inline": "true"
+                        }
+                    ]
+                }]
+            }
+        ]]
+        httpReq(RequestINFO)
+
+    elseif TypeHook == "WebhookSeed" and (not HideWebhook or ShowSeedInfo) then
+
+        local RequestINFO = {}
+        RequestINFO.url = WebhookSeed.."/messages/"..HookIDSeed
+        RequestINFO.json = true
+        RequestINFO.method=PATCH
+        RequestINFO.postData = [[
+            {
+                "username": "]]..OdBot().name..[[",
+                "content": "]]..Ment..[[",
+
+                "embeds": [{
+                    "description": "]].. logger ..[[",
+                    "color": "]] .. Warna .. [[",
+
+                    "footer": {
+                        "text": "Rotation Script by Ohdear_ \n]]..IniWaktu()..[[",
+                        "icon_url": "]].. Thumbs ..[["
+                    },
+
+                    "thumbnail": {
+                        "url": "]].. LogoPartai[Lopar] ..[["
+                    },
+
+                    "image": {
+                        "url": "]].. Odirrrr ..[["
+                    },
+
+                    "author": {
+                        "name": "]]..Judulz..[[",
+                        "url": "https://discord.gg/TjVwdgma74",
+                        "icon_url": "]]..Thumbs..[["
+                    },
+
+                    "fields": [
+                        {
+                            "name": "]]..emot_bot..[[ Bot Name",
+                            "value": "]]..OdBot().name..[[ **(]]..getPing()..[[ Ms | Lv]]..OdBot().level..[[)**",
+                            "inline": "false"
+                        },
+
+                        {
+                            "name": "]]..emot_world..[[ ]]..GetNameID(seed)..[[",
+                            "value": "]]..ShowSeed..[[",
+                            "inline": "true"
+                        },
+                        {
+                            "name": "]]..emot_tas..[[ Backpack (Sisa Seed)",
+                            "value": "]]..findItem(seed)..[[ ]]..GetNameID(seed)..[[",
+                            "inline": "true"
+                        },
+
+                        {
+                            "name": ":timer: Bot Active",
+                            "value": "]]..BotRun..[[",
+                            "inline": "false"
+                        }
+                    ]
+                }]
+            }
+        ]]
+        httpReq(RequestINFO)
+
+    elseif TypeHook == "WebhookPack" and (not HideWebhook or ShowPackInfo) then
+
+        local RequestINFO = {}
+        RequestINFO.url = WebhookPack.."/messages/"..HookIDPack
+        RequestINFO.json = true
+        RequestINFO.method=PATCH
+        RequestINFO.postData = [[
+            {
+                "username": "]]..OdBot().name..[[",
+                "content": "]]..Ment..[[",
+                
+                "embeds": [{
+                    "description": "]].. logger ..[[",
+                    "color": "]] .. Warna .. [[",
+
+                    "footer": {
+                        "text": "Rotation Script by Ohdear_ \n]]..IniWaktu()..[[",
+                        "icon_url": "]].. Thumbs ..[["
+                    },
+
+                    "thumbnail": {
+                        "url": "]].. LogoPartai[Lopar] ..[["
+                    },
+
+                    "image": {
+                        "url": "]].. Odirrrr ..[["
+                    },
+
+                    "author": {
+                        "name": "]]..Judulz..[[",
+                        "url": "https://discord.gg/TjVwdgma74",
+                        "icon_url": "]]..Thumbs..[["
+                    },
+
+                    "fields": [
+                        {
+                            "name": "]]..emot_bot..[[ Bot Name",
+                            "value": "]]..OdBot().name..[[ **(]]..getPing()..[[ Ms | Lv]]..OdBot().level..[[)**",
+                            "inline": "false"
+                        },
+
+                        {
+                            "name": "]]..emot_pack..[[ ]]..namapack:upper()..[[",
+                            "value": "]]..ShowPack..[[",
+                            "inline": "true"
+                        },
+                        {
+                            "name": ":timer: Bot Active",
+                            "value": "]]..BotRun..[[",
+                            "inline": "true"
+                        }
+                    ]
+                }]
+            }
+        ]]
+        httpReq(RequestINFO)
+
+    elseif TypeHook == "WebhookSpec" and (not HideWebhook or ShowSpecInfo) then
+
+        local RequestINFO = {}
+        RequestINFO.url = WebhookSpec.."/messages/"..HookIDSpec
+        RequestINFO.json = true
+        RequestINFO.method=PATCH
+        RequestINFO.postData = [[
+            {
+                "username": "]]..OdBot().name..[[",
+                "content": "]]..Ment..[[",
+                
+                "embeds": [{
+                    "description": "]].. logger ..[[",
+                    "color": "]] .. Warna .. [[",
+
+                    "footer": {
+                        "text": "Rotation Script by Ohdear_ \n]]..IniWaktu()..[[",
+                        "icon_url": "]].. Thumbs ..[["
+                    },
+
+                    "thumbnail": {
+                        "url": "]].. LogoPartai[Lopar] ..[["
+                    },
+
+                    "image": {
+                        "url": "]].. Odirrrr ..[["
+                    },
+
+                    "author": {
+                        "name": "]]..Judulz..[[",
+                        "url": "https://discord.gg/TjVwdgma74",
+                        "icon_url": "]]..Thumbs..[["
+                    },
+
+                    "fields": [
+                        {
+                            "name": "]]..emot_bot..[[ Bot Name",
+                            "value": "]]..OdBot().name..[[ **(]]..getPing()..[[ Ms | Lv]]..OdBot().level..[[)**",
+                            "inline": "false"
+                        },
+
+                        {
+                            "name": "]]..emot_pack..[[ SPECIAL ITEM",
+                            "value": "]]..ShowSpec..[[",
+                            "inline": "true"
+                        },
+                        {
+                            "name": ":timer: Bot Active",
+                            "value": "]]..BotRun..[[",
+                            "inline": "true"
+                        }
+                    ]
+                }]
+            }
+        ]]
+        httpReq(RequestINFO)
+
+    end
+end
