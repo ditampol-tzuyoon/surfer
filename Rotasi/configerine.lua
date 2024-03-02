@@ -1,4 +1,4 @@
-IP_Server_OD = "47.90.162.79"
+IP_Server_OD = "47.90.166.159"
 
 Odirrrr = "https://raw.githubusercontent.com/ditampol-tzuyoon/surfer/main/Image%20Animasi.gif"
 
