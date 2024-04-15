@@ -37,15 +37,9 @@ function OdBot()
         OdLvl = 0
     end
 
-    if bot:getLocal().guest then
-        nama = OriName(bot:getLocal().name)
-    else
-        nama = bot:getLocal().name
-    end
-
     return {
         world = bot:getCurrentWorld():upper(),
-        name = nama,
+        name = OriName(bot:getLocal().name),
         x = bot:getLocal().pos.x,
         y = bot:getLocal().pos.y,
         level = OdLvl,
